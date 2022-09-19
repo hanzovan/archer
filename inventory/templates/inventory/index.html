@@ -5,7 +5,18 @@
 
 {% endblock %}
 {% block main %}
+    <h1>Inventory</h1>
+    <ul>
+        {% for item in items %}
 
-    Hello, this is inventory
+            <li>{{ item.capitalize}}</li>
+
+        {% empty %}
+
+            <li>No item yet</li>
+
+        {% endfor %}
+    </ul>
+    End list
 
 {% endblock %}

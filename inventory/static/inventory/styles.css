@@ -1,0 +1,17 @@
+h1 {
+  font-family: sans-serif;
+  font-size: 48px;
+  font-style: bold; }
+
+ul {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-style: italic; }
+
+h1 {
+  color: orange; }
+
+ul {
+  color: blue; }
+
+/*# sourceMappingURL=styles.css.map */
