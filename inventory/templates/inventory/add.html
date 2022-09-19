@@ -1,0 +1,16 @@
+{% extends "inventory/layout.html" %}
+{% block title %}
+
+    add new item
+
+{% endblock %}
+{% block main %}
+
+    <h1>Add a new item</h1>
+    <form action="{% url 'inventory:add' %}" method="post">
+        {% csrf_token %}
+        <input autocomplete="off" autofocus name="item" tyle="text" placeholder="Your item's name">
+        <button>Add</button>
+    </form>
+
+{% endblock %}

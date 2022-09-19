@@ -7,6 +7,10 @@
 
     </head>
     <body>
+        <div class="nav">
+            <a href="{% url 'inventory:index' %}">Index</a>
+            <a href="{% url 'inventory:add' %}">Add new item</a>
+        </div>
         <main>
             {% block main %}{% endblock %}
         </main>
